@@ -1,0 +1,21 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "title": "Spaghetti Bolognese",
+        "description": "A classic Italian dish with rich meat sauce served over spaghetti.",
+        "ingredients": ["Spaghetti", "Ground beef", "Tomato sauce", "Garlic", "Onion"],
+        "steps": [
+          "Cook spaghetti according to package instructions.",
+          "Brown the beef in a pan.",
+          "Add garlic and onion; sauté until soft.",
+          "Add tomato sauce and simmer."
+        ],
+        "tags": ["Dinner", "Italian", "Medium"],
+        "difficulty": "Medium",
+        "lastUpdated": "2024-06-18T10:00:00Z"
+      }
+    ],
+    "messages": []
+  }
+  
