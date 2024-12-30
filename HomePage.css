@@ -146,10 +146,57 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 15px;
+ 
   }
   
   .ingredients-button:hover {
-    background-color: #005bb5;
+    background-color: #b54500;
   }
     
+  .project-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.project-list li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-list h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.project-list p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-list a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #9c5c0e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.project-list a:hover {
+    background-color: #6b4304;
+}
