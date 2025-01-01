@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './RecipeManage.css';
+import './RecipeManage.css'; // Optional: Add styles for the form
 
 const RecipeManage = ({ onAddRecipe, onEditRecipe, initialRecipe }) => {
   const [showForm, setShowForm] = useState(false);
@@ -39,7 +39,7 @@ const RecipeManage = ({ onAddRecipe, onEditRecipe, initialRecipe }) => {
     }
     setShowForm(!showForm);
   };
-  
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setRecipeData((prev) => ({ ...prev, [name]: value }));
@@ -47,14 +47,14 @@ const RecipeManage = ({ onAddRecipe, onEditRecipe, initialRecipe }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
+
     const formattedRecipe = {
       ...recipeData,
       ingredients: recipeData.ingredients.split(',').map((item) => item.trim()),
       steps: recipeData.steps.split('.').map((item) => item.trim()).filter(Boolean),
       tags: recipeData.tags.split(',').map((item) => item.trim()),
       lastUpdated: new Date().toISOString(),
-      createTime: initialRecipe ? initialRecipe.createTime : new Date().toISOString(), // Keep original or set for new
+      createTime: initialRecipe ? initialRecipe.createTime : new Date().toISOString(),
     };
 
     if (initialRecipe) {
@@ -113,6 +113,19 @@ const RecipeManage = ({ onAddRecipe, onEditRecipe, initialRecipe }) => {
       )}
       {showForm && (
         <form onSubmit={handleSubmit} className="recipe-form">
+          {initialRecipe && (
+            <p>
+              <strong>Created Time:</strong>{' '}
+              {new Date(initialRecipe.createTime).toLocaleString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true,
+              })}
+            </p>
+          )}
           <input
             type="text"
             name="title"

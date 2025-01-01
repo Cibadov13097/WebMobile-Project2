@@ -9,6 +9,19 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
 
   const [sortOption, setSortOption] = useState('');
 
+  // Utility function to sort recipes by update date
+  const sortByUpdateDate = (recipes) => {
+    if (!recipes || recipes.length === 0) {
+      return [];
+    }
+
+    return [...recipes].sort((a, b) => {
+      const dateA = a.updateTime ? new Date(a.updateTime) : new Date(0); // Fallback to epoch if missing
+      const dateB = b.updateTime ? new Date(b.updateTime) : new Date(0); // Fallback to epoch if missing
+      return dateB - dateA; // Sort in descending order (new-to-old)
+    });
+  };
+
   const handleFilterChange = (event) => {
     const { name, value } = event.target;
     setFilters((prevFilters) => ({
@@ -23,41 +36,47 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
 
   const applyFilters = () => {
     if (!recipes || recipes.length === 0) {
-      onFilterResults([]); // Provide an empty array as the filtered result
+      onFilterResults([]);
       return;
     }
 
     let filteredRecipes = recipes;
 
+    // Filter by difficulty
     if (filters.difficulty) {
       filteredRecipes = filteredRecipes.filter(
         (recipe) => recipe.difficulty === filters.difficulty
       );
     }
 
+    // Filter by tags
     if (filters.tags) {
       const tagsArray = filters.tags.toLowerCase().split(',').map((tag) => tag.trim());
-      filteredRecipes = filteredRecipes.filter((recipe) =>
-        tagsArray.every((tag) => recipe.tags.map((t) => t.toLowerCase()).includes(tag))
-      );
+
+      filteredRecipes = filteredRecipes.filter((recipe) => {
+        const recipeTags = recipe.tags.map((t) => t.toLowerCase().trim());
+        return tagsArray.some((tag) => recipeTags.includes(tag));
+      });
     }
 
-    if (sortOption) {
+    // Sort by update date or other options
+    if (sortOption === 'updateTime') {
+      filteredRecipes = sortByUpdateDate(filteredRecipes);
+    } else if (sortOption === 'title') {
+      filteredRecipes = [...filteredRecipes].sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortOption === 'createTime') {
       filteredRecipes = [...filteredRecipes].sort((a, b) => {
-        if (sortOption === 'title') {
-          return a.title.localeCompare(b.title);
-        } else if (sortOption === 'createTime') {
-          return new Date(a.createTime) - new Date(b.createTime);
-        } else if (sortOption === 'updateTime') {
-          return new Date(a.updateTime) - new Date(b.updateTime);
-        } else if (sortOption === 'difficulty') {
-          const difficultyOrder = ['Easy', 'Medium', 'Hard'];
-          return difficultyOrder.indexOf(a.difficulty) - difficultyOrder.indexOf(b.difficulty);
-        } else if (sortOption === 'tags') {
-          return a.tags.length - b.tags.length;
-        }
-        return 0;
+        const dateA = a.createTime ? new Date(a.createTime) : new Date(0);
+        const dateB = b.createTime ? new Date(b.createTime) : new Date(0);
+        return dateB - dateA;
       });
+    } else if (sortOption === 'difficulty') {
+      const difficultyOrder = ['Easy', 'Medium', 'Hard'];
+      filteredRecipes = [...filteredRecipes].sort(
+        (a, b) => difficultyOrder.indexOf(a.difficulty) - difficultyOrder.indexOf(b.difficulty)
+      );
+    } else if (sortOption === 'tags') {
+      filteredRecipes = [...filteredRecipes].sort((a, b) => a.tags.length - b.tags.length);
     }
 
     onFilterResults(filteredRecipes);
@@ -66,13 +85,14 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
   const clearFilters = () => {
     setFilters({ difficulty: '', tags: '' });
     setSortOption('');
-    onFilterResults(recipes); // Reset to show all recipes
+    onFilterResults(recipes);
   };
 
   return (
     <div className="filter-recipes">
       <h2>Filter Recipes</h2>
       <div className="filter-controls">
+        {/* Filter by Difficulty */}
         <select
           name="difficulty"
           value={filters.difficulty}
@@ -85,6 +105,7 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
           <option value="Hard">Hard</option>
         </select>
 
+        {/* Filter by Tags */}
         <input
           type="text"
           name="tags"
@@ -94,6 +115,7 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
           className="filter-input"
         />
 
+        {/* Sorting Options */}
         <select
           value={sortOption}
           onChange={handleSortChange}
@@ -107,6 +129,7 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
           <option value="difficulty">Difficulty</option>
         </select>
 
+        {/* Apply and Clear Buttons */}
         <button onClick={applyFilters} className="apply-button">Apply Filters</button>
         <button onClick={clearFilters} className="clear-button">Clear Filters</button>
       </div>

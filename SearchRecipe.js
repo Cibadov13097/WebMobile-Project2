@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SearchRecipe.css';
+import './SearchRecipe.css'; // Optional: Add CSS for styling
 
 const SearchRecipe = ({ recipes, onSearchResults }) => {
   const [query, setQuery] = useState('');
