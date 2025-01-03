@@ -1,0 +1,63 @@
+form {
+    max-width: 420px; /* Ensures consistent width */
+    margin: 50px auto; /* Centers the form */
+    padding: 30px; /* Adds equal padding inside the form */
+    background: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    text-align: left; /* Ensures text is aligned left */
+    box-sizing: border-box; /* Includes padding and border in width */
+    padding-left: 50px;
+  }
+  
+  form label {
+    display: block; /* Ensures labels are on their own line */
+    font-weight: bold; /* Makes labels bold */
+    margin-bottom: 8px; /* Space below labels */
+    color: #333; /* Darker text color */
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    width: calc(100% - 20px); /* Ensures equal padding on both sides */
+    padding: 10px; /* Adds padding inside the inputs */
+    margin-bottom: 15px; /* Space between elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    box-sizing: border-box; /* Includes padding and border in width */
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #a44e04; /* Blue border on focus */
+    outline: none; /* Removes default outline */
+    box-shadow: 0 0 5px rgba(109, 53, 6, 0.5); /* Blue shadow on focus */
+  }
+  
+  form button {
+    background: #a44e04; /* Blue background */
+    color: white; /* White text */
+    font-size: 18px; /* Larger text size */
+    font-weight: bold; /* Bold text */
+    border: none; /* Removes border */
+    cursor: pointer; /* Changes cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    padding: 10px 20px; /* Adds padding to make button larger */
+    box-sizing: border-box; /* Consistent sizing */
+  }
+  
+  form button:hover {
+    background: #7a400d; /* Darker blue on hover */
+  }
+  
+  p#responseMessage,
+  p#errorMessage {
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Space above message */
+    font-size: 16px; /* Text size */
+  }
+  
