@@ -1,5 +1,31 @@
 import React, { useState } from 'react';
-import './FilterRecipes.css'; // Optional: Add CSS for styling
+import './FilterRecipes.css';
+
+// Function to sort by update date (new to old)
+export const sortByUpdateDate = (recipes) => {
+  if (!recipes || recipes.length === 0) {
+    return [];
+  }
+
+  return [...recipes].sort((a, b) => {
+    const dateA = new Date(a.lastUpdated);
+    const dateB = new Date(b.lastUpdated);
+    return dateB - dateA; // Descending order (new to old)
+  });
+};
+
+// Function to sort by creation date (old to new)
+export const sortByCreateDate = (recipes) => {
+  if (!recipes || recipes.length === 0) {
+    return [];
+  }
+
+  return [...recipes].sort((a, b) => {
+    const dateA = new Date(a.createTime);
+    const dateB = new Date(b.createTime);
+    return dateA - dateB; // Ascending order (old to new)
+  });
+};
 
 const FilterRecipes = ({ recipes, onFilterResults }) => {
   const [filters, setFilters] = useState({
@@ -8,19 +34,6 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
   });
 
   const [sortOption, setSortOption] = useState('');
-
-  // Utility function to sort recipes by update date
-  const sortByUpdateDate = (recipes) => {
-    if (!recipes || recipes.length === 0) {
-      return [];
-    }
-
-    return [...recipes].sort((a, b) => {
-      const dateA = a.updateTime ? new Date(a.updateTime) : new Date(0); // Fallback to epoch if missing
-      const dateB = b.updateTime ? new Date(b.updateTime) : new Date(0); // Fallback to epoch if missing
-      return dateB - dateA; // Sort in descending order (new-to-old)
-    });
-  };
 
   const handleFilterChange = (event) => {
     const { name, value } = event.target;
@@ -59,24 +72,18 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
       });
     }
 
-    // Sort by update date or other options
+    // Apply sorting
     if (sortOption === 'updateTime') {
       filteredRecipes = sortByUpdateDate(filteredRecipes);
+    } else if (sortOption === 'createTime') {
+      filteredRecipes = sortByCreateDate(filteredRecipes);
     } else if (sortOption === 'title') {
       filteredRecipes = [...filteredRecipes].sort((a, b) => a.title.localeCompare(b.title));
-    } else if (sortOption === 'createTime') {
-      filteredRecipes = [...filteredRecipes].sort((a, b) => {
-        const dateA = a.createTime ? new Date(a.createTime) : new Date(0);
-        const dateB = b.createTime ? new Date(b.createTime) : new Date(0);
-        return dateB - dateA;
-      });
     } else if (sortOption === 'difficulty') {
       const difficultyOrder = ['Easy', 'Medium', 'Hard'];
       filteredRecipes = [...filteredRecipes].sort(
         (a, b) => difficultyOrder.indexOf(a.difficulty) - difficultyOrder.indexOf(b.difficulty)
       );
-    } else if (sortOption === 'tags') {
-      filteredRecipes = [...filteredRecipes].sort((a, b) => a.tags.length - b.tags.length);
     }
 
     onFilterResults(filteredRecipes);
@@ -125,7 +132,6 @@ const FilterRecipes = ({ recipes, onFilterResults }) => {
           <option value="title">Title</option>
           <option value="createTime">Creation Time</option>
           <option value="updateTime">Update Time</option>
-          <option value="tags">Number of Tags</option>
           <option value="difficulty">Difficulty</option>
         </select>
 
