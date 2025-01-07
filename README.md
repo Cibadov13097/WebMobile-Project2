@@ -30,9 +30,10 @@ Before starting, ensure you have the following installed:
 
 
 If your project doesn’t already have a package.json file, you need to initialize it by running:
+
 ![resim](https://github.com/user-attachments/assets/37bdc1dc-7248-4633-a42e-2d7649ff14a5)
 
-Install npm Packages
+#### Install npm Packages
 
 
 Common npm Commands for React Projects
@@ -46,7 +47,13 @@ Common npm Commands for React Projects
 
 
 Command for Server installing
+
 ![resim](https://github.com/user-attachments/assets/19cc7852-01fc-4c94-be04-4f96ef0239a4)
+
+Then create a db.json file with the following structure
+
+![resim](https://github.com/user-attachments/assets/ec41cf0d-092a-42e3-953f-70efa14872ff)
+
 
 After that
 Run this command in the terminal from the root directory of your React app.
@@ -54,6 +61,7 @@ Run this command in the terminal from the root directory of your React app.
 ![resim](https://github.com/user-attachments/assets/1b4049c3-5c9c-403e-b722-60c75acfc07b)
 
 and also open another terminal and run this command for running server
+
 ![resim](https://github.com/user-attachments/assets/87eb9f48-e305-48c6-8a98-26e9f2dba5e8)
 
 
