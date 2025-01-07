@@ -5,6 +5,8 @@ This project is a simple **Recipe App** built with React. It allows users to dis
 ## Link to the GitHub Page That Hosts the Website  
 [Recipe Manager App](https://github.com/Cibadov13097/WebMobile-Project2)
 
+## Website video link
+[Video](https://adauniversity-my.sharepoint.com/:v:/g/personal/cibadov13097_ada_edu_az/EX8ZrvZ--f1CsMJwqg3CAKIBvEKls-hNhzl3swSAP4etHg?e=QflD1d&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 ## Features
 
 - View featured recipes on the homepage.
