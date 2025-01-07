@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative; /* Necessary for pseudo-element positioning */
+  background-color: white; /* Optional fallback color */
+}
+
+/* Add low-opacity background image using pseudo-element */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/background.jpg');
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.3; /* Adjust this for desired transparency */
+  z-index: -1; /* Ensure it stays behind the content */
+  pointer-events: none; /* Prevent the pseudo-element from blocking clicks */
+}
+
+.es-page {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+  
+  .recipes-page h1 {
+    
+    text-align: center;
+    color: #020f14;
+    margin-bottom: 20px;
+
+  }
+  
+
+  .recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Exactly 4 recipes per row */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  
+  .recipe-card {
+    background-color: rgb(244, 228, 221);
+   
+    border-radius: 8px;
+   
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .recipe-card:hover{
+    background: #dcadad;
+  }
+
+  .recipe-card h2 {
+    font-style: italic;
+    color: #151622;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-card p {
+    
+    color: #2d2b2b;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-card ul,
+  .recipe-card ol {
+    
+    margin-left: 20px;
+    color: #933636;
+  }
+  
+  .recipe-card ul li,
+  .recipe-card ol li {
+    
+    margin-bottom: 5px;
+  }
+  
+  .recipe-card strong {
+    
+    color: #333;
+  }
+  
+/* --------------- */
+
+  .ingredients-list,
+  .steps-list {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #555;
+  }
+  
+  .ingredients-button {
+    padding: 8px 15px;
+    background-color: #744c2b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+  }
+ 
+  .steps-button {
+    padding: 8px 15px;
+    background-color:  #bd6319;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+  }
+  
+  
+  .ingredients-button:hover,
+  .steps-button:hover {
+    background-color: #4f2b06;
+  }
+  
+  .recipe-card .delete-button{
+    opacity: 0;
+  transition: opacity 0.3s ease;
+    text-align: center;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #b92828;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 6px;
+  }
+  .recipe-card:hover .delete-button {
+    opacity: 1;
+  }
+
+
+
+  /* -----add recipes--- */
+  .recipe-manage {
+    margin: 20px auto; /* Center horizontally */
+    text-align: center;
+    border: 5px solid #744c2b;
+    width: 90%; /* Set a width for the container */
+    max-width: 500px; /* Limit the maximum width */
+    padding: 20px; /* Add padding inside the border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    background-color: #f9f9f9; /* Optional: Add a light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better aesthetics */
+  }
+  
+  .dropdown-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .recipe-form {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .recipe-form input,
+  .recipe-form textarea,
+  .recipe-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .recipe-form textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  .recipe-form .submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .recipe-form .submit-button:hover {
+    background-color: #218838;
+  }
+  
+/* ------Pagination----- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  margin-top: 60px;
+}
+
+.pagination button {
+  background-color: #e39207; /* Primary color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 8px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #e36607; /* Darker shade for hover */
+}
+
+.pagination button:disabled {
+  background-color: #cccccc; /* Disabled state color */
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 17px;
+  color: #333;
+  margin: 0 8px;
+  
+}
+/* 
+-----share button---- */
+.floating-share-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-share-button button {
+  background-color: #d93025; /* Gmail's red color */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between icon and text */
+}
+
+.floating-share-button button i {
+  font-size: 20px; /* Icon size */
+}
+
+.floating-share-button button:hover {
+  background-color: #b12720; /* Darker Gmail red */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.floating-share-button button:active {
+  background-color: #a61b1b; /* Even darker Gmail red */
+  transform: scale(0.98); /* Pressed effect */
+}
+
+
+
+/* ----clear-checkbox--- */
+.clear-checkbox-button {
+  position: fixed; /* Keeps the button in a fixed position */
+  right: 20px; /* Positions it at the bottom of the screen */
+  right: 20px; /* Positions it on the right side */
+  background-color: #dedb4d; /* Green color */
+  color: rgb(26, 20, 20);
+  border: none;
+  padding: 10px 20px; /* Adjust padding for a smaller button */
+  font-size: 14px; /* Smaller font size */
+  font-weight: bold;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000; /* Ensures it's above other elements */
+}
+
+.clear-checkbox-button:hover {
+  background-color: #aba923; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.clear-checkbox-button:active {
+  background-color: #fffb00; /* Even darker green on click */
+  transform: scale(0.95); /* Pressed effect */
+}
+/* 
+----edit button--- */
+/* Hide the edit button initially */
+.recipe-card .edit-button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+    text-align: center;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #28b93e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+/* Show the edit button on hover */
+.recipe-card:hover .edit-button {
+  opacity: 1; /* Fully visible on hover */
+}
+
+/* Hover effect for the edit button */
+.recipe-card .edit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+
+
+
+/* popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.add-recipe-button {
+  background-color: #6d4603;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: block; /* Ensure block layout for centering */
+  margin: 20px auto; /* Center horizontally */
+}
+
+.add-recipe-button:hover {
+  background-color: #45a049;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+

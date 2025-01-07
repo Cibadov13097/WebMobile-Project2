@@ -1,0 +1,1095 @@
+{
+  "recipes": [
+    {
+      "title": "Spaghetti Bolognese",
+      "description": "A classic Italian dish with rich meat sauce served over spaghetti.",
+      "ingredients": [
+        "Spaghetti",
+        "Ground beef",
+        "Tomato sauce",
+        "Garlic",
+        "Onion"
+      ],
+      "steps": [
+        "Cook spaghetti according to package instructions",
+        "Brown the beef in a pan",
+        "Add garlic and onion; sauté until soft",
+        "Add tomato sauce and simmer"
+      ],
+      "tags": [
+        "Dinner",
+        "Italian",
+        "Medium"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T09:20:55.785Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "1",
+      "order": 1
+    },
+    {
+      "title": "Chicken Curry",
+      "description": "A flavorful and spicy Indian curry made with tender chicken pieces.",
+      "ingredients": [
+        "Chicken",
+        "Curry powder",
+        "Coconut milk",
+        "Onion",
+        "Garlic"
+      ],
+      "steps": [
+        "Brown chicken in a pot",
+        "Add onion and garlic; sauté until soft",
+        "Stir in curry powder and coconut milk",
+        "Simmer until chicken is cooked through"
+      ],
+      "tags": [
+        "Dinner",
+        "Indian",
+        "Spicy"
+      ],
+      "difficulty": "Medium",
+      "createTime": "2024-06-18T10:00:00Z",
+      "lastUpdated": "2024-12-30T20:16:02.029Z",
+      "id": "2",
+      "order": 2
+    },
+    {
+      "title": "Vegetable Stir-Fry",
+      "description": "A quick and healthy mix of fresh vegetables stir-fried with a savory sauce.",
+      "ingredients": [
+        "Broccoli",
+        "Carrots",
+        "Bell peppers",
+        "Soy sauce",
+        "Garlic"
+      ],
+      "steps": [
+        "Heat oil in a wok",
+        "Add garlic and stir-fry vegetables",
+        "Pour soy sauce over vegetables",
+        "Cook until tender-crisp"
+      ],
+      "tags": [
+        "Dinner",
+        "Asian",
+        "Healthy"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T09:20:58.244Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "3",
+      "order": 3
+    },
+    {
+      "title": "Beef Tacoss",
+      "description": "A Mexican favorite with seasoned beef and fresh toppings in a crispy shell.",
+      "ingredients": [
+        "Ground beef",
+        "Taco seasoning",
+        "Tortillas",
+        "Lettuce",
+        "Cheese"
+      ],
+      "steps": [
+        "Cook beef with taco seasoning",
+        "Warm tortillas",
+        "Assemble tacos with beef, lettuce, and cheese"
+      ],
+      "tags": [
+        "Dinner",
+        "Mexican",
+        "Easy"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-03T22:36:25.316Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "4",
+      "order": 4
+    },
+    {
+      "title": "Caesar Salad",
+      "description": "A fresh salad with crisp lettuce, croutons, and creamy Caesar dressing.",
+      "ingredients": [
+        "Romaine lettuce",
+        "Croutons",
+        "Caesar dressing",
+        "Parmesan cheese",
+        "Chicken (optional)"
+      ],
+      "steps": [
+        "Chop lettuce and place in a bowl",
+        "Add croutons and Parmesan",
+        "Toss with Caesar dressing",
+        "Top with grilled chicken if desired"
+      ],
+      "tags": [
+        "Lunch",
+        "Salad",
+        "Healthy"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T09:21:08.478Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "5",
+      "order": 5
+    },
+    {
+      "title": "Margherita Pizza",
+      "description": "A simple pizza topped with tomatoes, mozzarella, and basil.",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Mozzarella",
+        "Basil",
+        "Olive oil"
+      ],
+      "steps": [
+        "Roll out pizza dough",
+        "Spread tomato sauce over dough",
+        "Add mozzarella and basil",
+        "Bake until crust is golden"
+      ],
+      "tags": [
+        "Dinner",
+        "Italian",
+        "Medium"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-07T11:08:46.207Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "6"
+    },
+    {
+      "title": "Pancakes",
+      "description": "Fluffy pancakes perfect for breakfast or brunch.",
+      "ingredients": [
+        "Flour",
+        "Eggs",
+        "Milk",
+        "Butter",
+        "Baking powder"
+      ],
+      "steps": [
+        "Mix dry ingredients",
+        "Whisk in eggs and milk",
+        "Cook batter on a greased skillet",
+        "Serve with syrup"
+      ],
+      "tags": [
+        "Breakfast",
+        "American",
+        "Easy"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-03T22:40:12.083Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "7",
+      "order": 7
+    },
+    {
+      "title": "Grilled Cheese Sandwich",
+      "description": "A simple and comforting sandwich with melted cheese.",
+      "ingredients": [
+        "Bread",
+        "Cheese",
+        "Butter"
+      ],
+      "steps": [
+        "Butter one side of each bread slice",
+        "Place cheese between bread slices, buttered side out",
+        "Grill until golden brown"
+      ],
+      "tags": [
+        "Lunch",
+        "American",
+        "Easy"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T09:21:10.676Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "8",
+      "order": 8
+    },
+    {
+      "title": "Chocolate Cake",
+      "description": "A rich and moist chocolate cake perfect for dessert.",
+      "ingredients": [
+        "Flour",
+        "Cocoa powder",
+        "Sugar",
+        "Eggs",
+        "Butter"
+      ],
+      "steps": [
+        "Mix dry ingredients",
+        "Add eggs and butter",
+        "Pour into a baking pan",
+        "Bake until a toothpick comes out clean"
+      ],
+      "tags": [
+        "Dessert",
+        "Baking",
+        "Medium"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "9",
+      "order": 9
+    },
+    {
+      "title": "Tomato Soup",
+      "description": "A warm and comforting tomato soup made with fresh tomatoes.",
+      "ingredients": [
+        "Tomatoes",
+        "Onion",
+        "Garlic",
+        "Vegetable broth",
+        "Cream"
+      ],
+      "steps": [
+        "Sauté onion and garlic",
+        "Add chopped tomatoes and broth",
+        "Simmer until tomatoes are soft",
+        "Blend and add cream"
+      ],
+      "tags": [
+        "Lunch",
+        "Soup",
+        "Healthy"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T09:21:15.929Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "10",
+      "order": 10
+    },
+    {
+      "title": "Plovv",
+      "description": "Traditional Azerbaijani rice dish served with a variety of stews.",
+      "ingredients": [
+        "Rice",
+        "Saffron",
+        "Onions",
+        "Lamb",
+        "Butter"
+      ],
+      "steps": [
+        "Boil the rice with saffron",
+        "Prepare the stew with lamb and onions",
+        "Layer rice and stew, then steam",
+        "Serve hot"
+      ],
+      "tags": [
+        "Main Course",
+        "Rice",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-07T11:07:19.653Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "15"
+    },
+    {
+      "title": "Dolma",
+      "description": "Stuffed grape leaves or vegetables with minced meat and rice.",
+      "ingredients": [
+        "Grape leaves",
+        "Minced meat",
+        "Rice",
+        "Onions",
+        "Spices"
+      ],
+      "steps": [
+        "Prepare the filling by mixing meat, rice, and spices",
+        "Wrap the filling in grape leaves",
+        "Cook in a pot with water and butter",
+        "Serve warm with yogurt"
+      ],
+      "tags": [
+        "Main Course",
+        "Stuffed",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "16",
+      "order": 16
+    },
+    {
+      "title": "Lavangi",
+      "description": "Baked chicken or fish stuffed with walnuts and onions.",
+      "ingredients": [
+        "Chicken or fish",
+        "Walnuts",
+        "Onions",
+        "Butter",
+        "Spices"
+      ],
+      "steps": [
+        "Prepare the stuffing with walnuts, onions, and spices",
+        "Stuff the chicken or fish",
+        "Bake in the oven until cooked",
+        "Serve with rice"
+      ],
+      "tags": [
+        "Main Course",
+        "Baked",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "17",
+      "order": 17
+    },
+    {
+      "title": "Qutab",
+      "description": "Thin dough filled with meat or greens, cooked on a griddle.",
+      "ingredients": [
+        "Flour",
+        "Minced meat or greens",
+        "Water",
+        "Salt",
+        "Butter"
+      ],
+      "steps": [
+        "Prepare the dough and roll it thin",
+        "Place the filling on one side and fold",
+        "Cook on a griddle until golden",
+        "Brush with butter and serve"
+      ],
+      "tags": [
+        "Snack",
+        "Griddle",
+        "Traditional"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "18",
+      "order": 18
+    },
+    {
+      "title": "Dushbara",
+      "description": "Small dumplings filled with minced meat, served in broth.",
+      "ingredients": [
+        "Flour",
+        "Minced meat",
+        "Onions",
+        "Spices",
+        "Water"
+      ],
+      "steps": [
+        "Prepare the dough and filling",
+        "Shape small dumplings",
+        "Cook in boiling broth",
+        "Serve hot with vinegar and garlic"
+      ],
+      "tags": [
+        "Soup",
+        "Dumplings",
+        "Traditional"
+      ],
+      "difficulty": "Hard",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "19",
+      "order": 19
+    },
+    {
+      "title": "Shekerbura",
+      "description": "Sweet pastry filled with ground nuts and sugar.",
+      "ingredients": [
+        "Flour",
+        "Butter",
+        "Sugar",
+        "Ground nuts",
+        "Milk"
+      ],
+      "steps": [
+        "Prepare the dough and filling",
+        "Shape the pastry and fill with nuts",
+        "Bake until golden",
+        "Serve as a dessert"
+      ],
+      "tags": [
+        "Dessert",
+        "Pastry",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "20",
+      "order": 20
+    },
+    {
+      "title": "Pakhlava",
+      "description": "Layered pastry with nuts, honey, and spices.",
+      "ingredients": [
+        "Flour",
+        "Honey",
+        "Butter",
+        "Nuts",
+        "Spices"
+      ],
+      "steps": [
+        "Prepare the dough and layer with nuts",
+        "Bake in the oven",
+        "Drizzle with honey and serve"
+      ],
+      "tags": [
+        "Dessert",
+        "Layered",
+        "Traditional"
+      ],
+      "difficulty": "Hard",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "21",
+      "order": 21
+    },
+    {
+      "title": "Kebab",
+      "description": "Grilled skewered meat served with vegetables.",
+      "ingredients": [
+        "Meat",
+        "Onions",
+        "Spices",
+        "Vegetables",
+        "Lemon"
+      ],
+      "steps": [
+        "Marinate the meat with spices",
+        "Skewer and grill the meat",
+        "Serve with grilled vegetables and lemon"
+      ],
+      "tags": [
+        "Main Course",
+        "Grilled",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "22",
+      "order": 22
+    },
+    {
+      "title": "Badimcan Dolmasi",
+      "description": "Stuffed eggplants with minced meat and rice.",
+      "ingredients": [
+        "Eggplants",
+        "Minced meat",
+        "Rice",
+        "Onions",
+        "Spices"
+      ],
+      "steps": [
+        "Hollow out the eggplants",
+        "Stuff with the prepared filling",
+        "Cook in a pot with water and butter",
+        "Serve warm"
+      ],
+      "tags": [
+        "Main Course",
+        "Stuffed",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "23",
+      "order": 23
+    },
+    {
+      "title": "Gutabs with Greens",
+      "description": "Thin dough filled with greens, cooked on a griddle.",
+      "ingredients": [
+        "Flour",
+        "Greens",
+        "Salt",
+        "Water",
+        "Butter"
+      ],
+      "steps": [
+        "Prepare the dough and roll it thin",
+        "Place greens on one side and fold",
+        "Cook on a griddle until golden",
+        "Brush with butter and serve"
+      ],
+      "tags": [
+        "Snack",
+        "Griddle",
+        "Vegetarian"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "24",
+      "order": 24
+    },
+    {
+      "title": "Kukusu",
+      "description": "A herb omelette made with greens and eggs, perfect for breakfast.",
+      "ingredients": [
+        "Eggs",
+        "Spinach",
+        "Dill",
+        "Parsley",
+        "Oil"
+      ],
+      "steps": [
+        "Chop the greens finely",
+        "Beat the eggs and mix with greens",
+        "Fry in a pan until set",
+        "Serve hot with bread"
+      ],
+      "tags": [
+        "Breakfast",
+        "Omelette",
+        "Vegetarian"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "25",
+      "order": 25
+    },
+    {
+      "title": "Shor Gogal",
+      "description": "Savory pastry flavored with turmeric and black pepper, a traditional Novruz treat.",
+      "ingredients": [
+        "Flour",
+        "Butter",
+        "Milk",
+        "Turmeric",
+        "Black pepper"
+      ],
+      "steps": [
+        "Prepare the dough and roll it thin",
+        "Spread the filling and roll up",
+        "Bake in the oven until golden",
+        "Serve as a snack"
+      ],
+      "tags": [
+        "Pastry",
+        "Snack",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "26",
+      "order": 26
+    },
+    {
+      "title": "Piti",
+      "description": "A slow-cooked stew made with lamb, chickpeas, and chestnuts.",
+      "ingredients": [
+        "Lamb",
+        "Chickpeas",
+        "Chestnuts",
+        "Onions",
+        "Saffron"
+      ],
+      "steps": [
+        "Soak the chickpeas overnight",
+        "Cook lamb with chickpeas and chestnuts",
+        "Add saffron and simmer until tender",
+        "Serve hot with bread"
+      ],
+      "tags": [
+        "Main Course",
+        "Stew",
+        "Traditional"
+      ],
+      "difficulty": "Hard",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "27",
+      "order": 27
+    },
+    {
+      "title": "Tendir Bread",
+      "description": "Traditional bread baked in a clay oven, crispy on the outside and soft inside.",
+      "ingredients": [
+        "Flour",
+        "Water",
+        "Salt",
+        "Yeast"
+      ],
+      "steps": [
+        "Prepare the dough and let it rise",
+        "Shape into flat rounds",
+        "Bake in a clay oven until golden",
+        "Serve warm"
+      ],
+      "tags": [
+        "Bread",
+        "Traditional",
+        "Baked"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "28",
+      "order": 28
+    },
+    {
+      "title": "Toyug Lavangi",
+      "description": "Stuffed chicken with a mixture of walnuts, onions, and dried fruits.",
+      "ingredients": [
+        "Whole chicken",
+        "Walnuts",
+        "Onions",
+        "Dried plums",
+        "Butter"
+      ],
+      "steps": [
+        "Prepare the stuffing by mixing walnuts, onions, and plums",
+        "Stuff the chicken and bake in the oven",
+        "Serve hot with rice or bread"
+      ],
+      "tags": [
+        "Main Course",
+        "Stuffed",
+        "Baked"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "29",
+      "order": 29
+    },
+    {
+      "title": "Lamb Shashlik",
+      "description": "Grilled skewered lamb marinated with onions and spices.",
+      "ingredients": [
+        "Lamb",
+        "Onions",
+        "Spices",
+        "Lemon",
+        "Oil"
+      ],
+      "steps": [
+        "Marinate lamb pieces with onions and spices",
+        "Skewer the lamb and grill",
+        "Serve hot with fresh vegetables"
+      ],
+      "tags": [
+        "Main Course",
+        "Grilled",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "30",
+      "order": 30
+    },
+    {
+      "title": "Shirin Plov",
+      "description": "Sweet rice pilaf cooked with dried fruits and nuts.",
+      "ingredients": [
+        "Rice",
+        "Dried apricots",
+        "Raisins",
+        "Almonds",
+        "Butter"
+      ],
+      "steps": [
+        "Cook the rice with butter",
+        "Fry dried fruits and nuts separately",
+        "Mix everything together and serve"
+      ],
+      "tags": [
+        "Main Course",
+        "Rice",
+        "Sweet"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "31",
+      "order": 31
+    },
+    {
+      "title": "Balig Kebab",
+      "description": "Grilled skewered fish marinated with herbs and lemon.",
+      "ingredients": [
+        "Fish fillets",
+        "Lemon",
+        "Herbs",
+        "Spices",
+        "Oil"
+      ],
+      "steps": [
+        "Marinate fish fillets with lemon juice, herbs, and spices",
+        "Skewer and grill the fish",
+        "Serve hot with fresh salad"
+      ],
+      "tags": [
+        "Main Course",
+        "Grilled",
+        "Seafood"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "32",
+      "order": 32
+    },
+    {
+      "title": "Halva",
+      "description": "A rich and sweet dessert made with flour, sugar, and butter.",
+      "ingredients": [
+        "Flour",
+        "Sugar",
+        "Butter",
+        "Water",
+        "Nuts"
+      ],
+      "steps": [
+        "Fry the flour in butter",
+        "Prepare the syrup by boiling sugar and water",
+        "Mix syrup with flour and cook until thick",
+        "Serve with nuts on top"
+      ],
+      "tags": [
+        "Dessert",
+        "Sweet",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "33",
+      "order": 33
+    },
+    {
+      "title": "Dovga",
+      "description": "A refreshing yogurt soup with herbs and rice, served cold or warm.",
+      "ingredients": [
+        "Yogurt",
+        "Rice",
+        "Dill",
+        "Coriander",
+        "Egg"
+      ],
+      "steps": [
+        "Whisk yogurt with egg and cook with rice",
+        "Add chopped herbs and simmer",
+        "Serve cold or warm"
+      ],
+      "tags": [
+        "Soup",
+        "Vegetarian",
+        "Traditional"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "34",
+      "order": 34
+    },
+    {
+      "title": "Ganja Pakhlava",
+      "description": "A rich and intricate layered dessert with walnuts and honey.",
+      "ingredients": [
+        "Flour",
+        "Walnuts",
+        "Butter",
+        "Honey",
+        "Egg yolks"
+      ],
+      "steps": [
+        "Prepare thin dough layers",
+        "Layer with ground walnuts and butter",
+        "Bake in the oven and drizzle with honey",
+        "Cut into diamond shapes and serve"
+      ],
+      "tags": [
+        "Dessert",
+        "Layered",
+        "Traditional"
+      ],
+      "difficulty": "Hard",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "35",
+      "order": 35
+    },
+    {
+      "title": "Gutab with Meat",
+      "description": "Thinly rolled dough filled with minced meat and cooked on a griddle.",
+      "ingredients": [
+        "Flour",
+        "Minced meat",
+        "Onions",
+        "Spices",
+        "Butter"
+      ],
+      "steps": [
+        "Prepare the dough and roll it thin",
+        "Place the minced meat filling and fold",
+        "Cook on a griddle and brush with butter",
+        "Serve hot"
+      ],
+      "tags": [
+        "Snack",
+        "Griddle",
+        "Traditional"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "36",
+      "order": 36
+    },
+    {
+      "title": "Firni",
+      "description": "A creamy and sweet rice pudding flavored with rose water.",
+      "ingredients": [
+        "Rice flour",
+        "Milk",
+        "Sugar",
+        "Rose water",
+        "Cinnamon"
+      ],
+      "steps": [
+        "Mix rice flour with milk and cook until thick",
+        "Add sugar and rose water",
+        "Serve with a sprinkle of cinnamon"
+      ],
+      "tags": [
+        "Dessert",
+        "Sweet",
+        "Traditional"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "37",
+      "order": 37
+    },
+    {
+      "title": "Turshu Govurma",
+      "description": "Lamb stew with sour plums and onions, offering a unique tangy flavor.",
+      "ingredients": [
+        "Lamb",
+        "Sour plums",
+        "Onions",
+        "Butter",
+        "Spices"
+      ],
+      "steps": [
+        "Cook lamb with onions until browned",
+        "Add sour plums and spices",
+        "Simmer until tender and serve"
+      ],
+      "tags": [
+        "Main Course",
+        "Stew",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "38",
+      "order": 38
+    },
+    {
+      "title": "Yarpag Dolmasi",
+      "description": "Stuffed grape leaves with minced meat and rice.",
+      "ingredients": [
+        "Grape leaves",
+        "Minced meat",
+        "Rice",
+        "Onions",
+        "Spices"
+      ],
+      "steps": [
+        "Prepare the filling by mixing meat, rice, and spices",
+        "Roll the filling in grape leaves",
+        "Cook in a pot with water and butter",
+        "Serve warm with yogurt"
+      ],
+      "tags": [
+        "Main Course",
+        "Stuffed",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "39",
+      "order": 39
+    },
+    {
+      "title": "Gavurma",
+      "description": "Preserved lamb cooked with its own fat, traditionally stored for winter.",
+      "ingredients": [
+        "Lamb",
+        "Onions",
+        "Butter",
+        "Salt",
+        "Spices"
+      ],
+      "steps": [
+        "Cook lamb with onions and butter",
+        "Add salt and spices",
+        "Store in jars for long-term use or serve immediately"
+      ],
+      "tags": [
+        "Main Course",
+        "Preserved",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "40",
+      "order": 40
+    },
+    {
+      "title": "Shorba",
+      "description": "A hearty soup made with lamb, vegetables, and spices.",
+      "ingredients": [
+        "Lamb",
+        "Carrots",
+        "Potatoes",
+        "Onions",
+        "Spices"
+      ],
+      "steps": [
+        "Cook lamb with onions until browned",
+        "Add vegetables and spices",
+        "Simmer until tender and serve"
+      ],
+      "tags": [
+        "Soup",
+        "Main Course",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "41",
+      "order": 41
+    },
+    {
+      "title": "Balva",
+      "description": "A sweet wheat porridge made with butter and sugar.",
+      "ingredients": [
+        "Wheat",
+        "Butter",
+        "Sugar",
+        "Water",
+        "Nuts"
+      ],
+      "steps": [
+        "Cook wheat in water until soft",
+        "Add butter and sugar",
+        "Serve with nuts on top"
+      ],
+      "tags": [
+        "Dessert",
+        "Sweet",
+        "Traditional"
+      ],
+      "difficulty": "Easy",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "42",
+      "order": 42
+    },
+    {
+      "title": "Xingal",
+      "description": "A dish made with layers of pasta, fried onions, and ground meat.",
+      "ingredients": [
+        "Flour",
+        "Eggs",
+        "Minced meat",
+        "Onions",
+        "Butter"
+      ],
+      "steps": [
+        "Prepare and boil the pasta",
+        "Fry minced meat and onions",
+        "Layer pasta with meat mixture",
+        "Serve hot with yogurt"
+      ],
+      "tags": [
+        "Main Course",
+        "Pasta",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-02T08:47:05.611Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "43",
+      "order": 43
+    },
+    {
+      "title": "Govurma Plov",
+      "description": "Rice pilaf served with fried lamb and onions.",
+      "ingredients": [
+        "Rice",
+        "Lamb",
+        "Onions",
+        "Butter",
+        "Saffron"
+      ],
+      "steps": [
+        "Cook the rice with saffron",
+        "Fry lamb and onions in oil",
+        "Serve rice topped with fried lamb"
+      ],
+      "tags": [
+        "Main Course",
+        "Rice",
+        "Traditional"
+      ],
+      "difficulty": "Medium",
+      "lastUpdated": "2025-01-07T10:20:54.449Z",
+      "createTime": "2024-06-18T10:00:00Z",
+      "id": "44"
+    }
+  ],
+  "messages": [
+    {
+      "id": "caae",
+      "subject": "ssdds",
+      "email": "ibadovcavid41@gmail.com",
+      "message": "dsds"
+    },
+    {
+      "id": "1c24",
+      "subject": "Thank you",
+      "email": "ibadovcavid41@gmail.com",
+      "message": "Thank you for great application"
+    },
+    {
+      "id": "841d",
+      "subject": "asdfg",
+      "email": "ibadovcavid41@gmail.com",
+      "message": "salam\n"
+    },
+    {
+      "id": "bb48",
+      "subject": "Hi",
+      "email": "ibadovcavid6@gmail.com",
+      "message": "hi"
+    },
+    {
+      "id": "2ca3",
+      "subject": "İt is very good application 100%",
+      "email": "ADA@gmail.com",
+      "message": "Hi "
+    }
+  ]
+}

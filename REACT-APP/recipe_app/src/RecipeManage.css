@@ -1,0 +1,86 @@
+.recipe-manage {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background: linear-gradient(to bottom right, #ffffff, #f3f4f6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-manage h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .recipe-manage input,
+  .recipe-manage textarea,
+  .recipe-manage select {
+    display: block;
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .recipe-manage input:focus,
+  .recipe-manage textarea:focus,
+  .recipe-manage select:focus {
+    border-color: #744c2b;
+    box-shadow: 0 0 6px #744c2b;
+    outline: none;
+  }
+  
+  .recipe-manage button {
+    padding: 12px 20px;
+    background: linear-gradient(to right, #744c2b, #744c2b);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .recipe-manage button:hover {
+    background: linear-gradient(to right, #744c2b, #744c2b);
+    transform: translateY(-2px);
+  }
+  
+  .recipe-manage button:active {
+    transform: translateY(0);
+  }
+  
+  .recipe-manage input::placeholder,
+  .recipe-manage textarea::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .recipe-manage textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  @media (max-width: 768px) {
+    .recipe-manage {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .recipe-manage h2 {
+      font-size: 1.5rem;
+    }
+  
+    .recipe-manage button {
+      width: 100%;
+    }
+  }
+  
